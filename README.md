@@ -16,6 +16,8 @@
        * ``` sudo systemctl restart wm8960-soundcard.service ```
        
    * **If you have a noise problem with the  Audio Codec , reinstall the driver and try it again.**
+   
+## Mic Test
 
 
 
