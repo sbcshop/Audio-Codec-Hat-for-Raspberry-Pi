@@ -11,4 +11,5 @@
    * Go to below directory to Install the driver 
        * ``` cd WM8960-Audio-HAT ```
        * ``` sudo ./install.sh ```
+   * After installation reboot thr raspberry pi ``` sudo reboot ```
          
