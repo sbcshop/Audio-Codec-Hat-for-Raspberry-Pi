@@ -12,7 +12,8 @@
        * ``` cd Audio-Codec-Hat-for-Raspberry-Pi ```
        * ``` sudo ./install.sh ```
    * After installation reboot raspberry pi  ``` sudo reboot ```
-   * Perform the following command to restart the service if the 3.5mm jack has no audio output.  ```sudo systemctl restart wm8960-soundcard.service ```
+   * Perform the following command to restart the service if the 3.5mm jack has no audio output.  
+       * ``` sudo systemctl restart wm8960-soundcard.service ```
 
 
 
