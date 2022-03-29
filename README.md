@@ -15,7 +15,7 @@
    * Perform the following command to restart the service if the 3.5mm jack has no audio output.  
        * ``` sudo systemctl restart wm8960-soundcard.service ```
        
-   * **If you have a noise problem with the  Audio Codec , reinstall the driver and try it again.**
+   * **If you notice a noise problem with the  Audio Codec , reinstall the driver and try it again.**
    
 ###  Mic Test
 Replace **Dhw:0** with your card number, command to know card number ``` arecord -l ```
