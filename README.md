@@ -8,7 +8,7 @@
 ## Installation Process
 ### steps
    * Download the repository of audio codec ``` git clone https://github.com/waveshare/WM8960-Audio-HAT ```
-   * Install the driver follow below instruction
+   * Go to below directory to Install the driver 
        * ``` cd WM8960-Audio-HAT ```
        * ``` sudo ./install.sh ```
          
