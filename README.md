@@ -11,5 +11,5 @@
    * Go to below directory to Install the driver 
        * ``` cd Audio-Codec-Hat-for-Raspberry-Pi ```
        * ``` sudo ./install.sh ```
-   * After installation reboot thr raspberry pi  ``` sudo reboot ```
+   * After installation reboot raspberry pi  ``` sudo reboot ```
          
