@@ -14,6 +14,7 @@
    * After installation reboot raspberry pi  ``` sudo reboot ```
    * Perform the following command to restart the service if the 3.5mm jack has no audio output.  
        * ``` sudo systemctl restart wm8960-soundcard.service ```
+   * Note: If you have a noise problem with the  Audio Codec , reinstall the driver and try it again.
 
 
 
