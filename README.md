@@ -7,4 +7,4 @@
 
 ## Installation Process
 ### steps
-   * Download the repository of audio codec
+   * Download the repository of audio codec ~~~ git clone https://github.com/waveshare/WM8960-Audio-HAT ~~~
