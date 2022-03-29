@@ -85,5 +85,4 @@ systemctl start wm8960-soundcard
 
 echo "------------------------------------------------------"
 echo "Please reboot your raspberry pi to apply all settings"
-echo "Enjoy!"
 echo "------------------------------------------------------"
