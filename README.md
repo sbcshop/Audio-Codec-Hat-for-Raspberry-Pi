@@ -7,9 +7,9 @@
 
 ## Installation Process
 ### steps
-   * Download the repository of audio codec ``` git clone https://github.com/waveshare/WM8960-Audio-HAT ```
+   * Download the repository of audio codec ``` git clone https://github.com/sbcshop/Audio-Codec-Hat-for-Raspberry-Pi ```
    * Go to below directory to Install the driver 
-       * ``` cd WM8960-Audio-HAT ```
+       * ``` cd Audio-Codec-Hat-for-Raspberry-Pi ```
        * ``` sudo ./install.sh ```
    * After installation reboot thr raspberry pi  ``` sudo reboot ```
          
