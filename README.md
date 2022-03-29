@@ -19,8 +19,8 @@
    
    
 ###  Mic Test
-Replace **Dhw:0** with your card number
-
+Replace **Dhw:0** with your card number,
+``` arecord -l ```
 ```sudo arecord -f cd -Dhw:0 | aplay -Dhw:0``` 
 
 
