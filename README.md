@@ -19,7 +19,6 @@
    
    
 ###  Mic Test
-
 ```sudo arecord -f cd -Dhw:0 | aplay -Dhw:0```
 
 
