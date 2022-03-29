@@ -7,4 +7,4 @@
 
 ## Installation Process
 steps : 
-      * Download the repository of audio codec
+    * Download the repository of audio codec
