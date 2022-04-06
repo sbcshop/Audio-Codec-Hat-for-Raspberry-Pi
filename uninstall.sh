@@ -41,5 +41,4 @@ sed -i '/snd-soc-wm8960-soundcard/d' /etc/modules
 
 echo "------------------------------------------------------"
 echo "Please reboot your raspberry pi to apply all settings"
-echo "Thank you!"
 echo "------------------------------------------------------"
