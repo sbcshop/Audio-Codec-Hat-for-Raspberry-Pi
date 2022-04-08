@@ -13,7 +13,7 @@
        * ``` cd Audio-Codec-Hat-for-Raspberry-Pi ```
        * ``` sudo ./install.sh ```
        * if you face issue like this **sudo: ./install.sh: command not found** Then follow below command
-        * ```sudo chmod 777 install.sh```
+        * ```sudo chmod 777 *```
         * ```sudo ./install.sh```
    * After installation reboot raspberry pi  ``` sudo reboot ```
    * Perform the following command to restart the service if the 3.5mm jack has no audio output.  
