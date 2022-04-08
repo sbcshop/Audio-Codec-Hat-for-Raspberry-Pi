@@ -9,7 +9,7 @@
 ## Installation Process
 ### steps :
    * Download the repository  ``` git clone https://github.com/sbcshop/Audio-Codec-Hat-for-Raspberry-Pi ```
-   * Go to below directory to Install the driver 
+   * Go to below directory to Install the driver (follow steps)
        * ``` cd Audio-Codec-Hat-for-Raspberry-Pi ```
        * ```sudo chmod 777 *```
        * ``` sudo ./install.sh ```
