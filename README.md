@@ -6,6 +6,8 @@
 
 <img src= "https://github.com/sbcshop/Audio-Codec-Hat-for-Raspberry-Pi/blob/main/images/img1.JPG" />
 
+## There is onboard Button which is connected to raspberry pi GPIO 17
+
 ## Installation Process
 ### steps :
    * Download the repository  ``` git clone https://github.com/sbcshop/Audio-Codec-Hat-for-Raspberry-Pi ```
