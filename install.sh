@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root (use sudo)" 1>&2
+   echo "This script must be run as root (please use sudo)" 1>&2
    exit 1
 fi
 
@@ -19,7 +19,7 @@ ver="1.0"
 marker="0.0.0"
 
 apt update
-apt-get -y install raspberrypi-kernel-headers raspberrypi-kernel 
+apt-get -y install raspberrypi-kernel-headers #raspberrypi-kernel 
 apt-get -y install  dkms git i2c-tools libasound2-plugins
 
 # locate currently installed kernels (may be different to running kernel if
@@ -62,15 +62,16 @@ grep -q "snd-soc-wm8960-soundcard" /etc/modules || \
   echo "snd-soc-wm8960-soundcard" >> /etc/modules  
   
 #set dtoverlays
-sed -i -e 's:#dtparam=i2c_arm=on:dtparam=i2c_arm=on:g'  /boot/config.txt || true
-grep -q "dtoverlay=i2s-mmap" /boot/config.txt || \
-  echo "dtoverlay=i2s-mmap" >> /boot/config.txt
+sed -i -e 's:#dtparam=i2c_arm=on:dtparam=i2c_arm=on:g'  /boot/firmware/config.txt || true
+sed -i -e 's:#dtparam=i2s=on:dtparam=i2s=on:g'  /boot/firmware/config.txt || true
+grep -q "dtoverlay=i2s-mmap" /boot/firmware/config.txt || \
+  echo "dtoverlay=i2s-mmap" >> /boot/firmware/config.txt
 
-grep -q "dtparam=i2s=on" /boot/config.txt || \
-  echo "dtparam=i2s=on" >> /boot/config.txt
+#grep -q "dtparam=i2s=on" /boot/firmware/config.txt || \
+#  echo "dtparam=i2s=on" >> /boot/firmware/config.txt
 
-#grep -q "dtoverlay=wm8960-soundcard" /boot/config.txt || \
-#  echo "dtoverlay=wm8960-soundcard" >> /boot/config.txt
+grep -q "dtoverlay=wm8960-soundcard" /boot/firmware/config.txt || \
+  echo "dtoverlay=wm8960-soundcard" >> /boot/firmware/config.txt
   
 #install config files
 mkdir /etc/wm8960-soundcard || true
@@ -84,5 +85,7 @@ systemctl enable  wm8960-soundcard.service
 systemctl start wm8960-soundcard                                
 
 echo "------------------------------------------------------"
+echo "Audio Codec Hat installation complete "
 echo "Please reboot your raspberry pi to apply all settings"
+echo "Enjoy!"
 echo "------------------------------------------------------"
