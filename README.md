@@ -29,10 +29,10 @@ Replace   **0**  in  **Dhw:0**  with your card number, command to know card numb
 
 ## Uninstallation Process
 ### steps :
-    * Go to Audio Codec Hat directory
-        * ``` cd Audio-Codec-Hat-for-Raspberry-Pi ```
-        * ``` sudo ./uninstall.sh ```
-    * After uninstallation reboot raspberry pi ``` sudo reboot ```
+   Go to Audio Codec Hat directory
+   * ``` cd Audio-Codec-Hat-for-Raspberry-Pi ```
+   * ``` sudo ./uninstall.sh ```
+   * After uninstallation reboot raspberry pi ``` sudo reboot ```
 
 
 
