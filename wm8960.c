@@ -883,7 +883,7 @@ static int wm8960_hw_params(struct snd_pcm_substream *substream,
 			iface |= 0x000c;
 			break;
 		}
-		/* fall through */
+		fallthrough;
 	default:
 		dev_err(component->dev, "unsupported width %d\n",
 			params_width(params));
@@ -1387,7 +1387,7 @@ static struct snd_soc_dai_driver wm8960_dai = {
 		.rates = WM8960_RATES,
 		.formats = WM8960_FORMATS,},
 	.ops = &wm8960_dai_ops,
-	.symmetric_rates = 1,
+	.symmetric_rate = 1,
 };
 
 static int wm8960_probe(struct snd_soc_component *component)
@@ -1414,7 +1414,6 @@ static const struct snd_soc_component_driver soc_component_dev_wm8960 = {
 	.idle_bias_on		= 1,
 	.use_pmdown_time	= 1,
 	.endianness		= 1,
-	.non_legacy_dai_naming	= 1,
 };
 
 static const struct regmap_config wm8960_regmap = {
@@ -1441,8 +1440,7 @@ static void wm8960_set_pdata_from_of(struct i2c_client *i2c,
 		pdata->shared_lrclk = true;
 }
 
-static int wm8960_i2c_probe(struct i2c_client *i2c,
-			    const struct i2c_device_id *id)
+static int wm8960_i2c_probe(struct i2c_client *i2c)
 {
 	struct wm8960_data *pdata = dev_get_platdata(&i2c->dev);
 	struct wm8960_priv *wm8960;
@@ -1505,11 +1503,8 @@ static int wm8960_i2c_probe(struct i2c_client *i2c,
 	return ret;
 }
 
-static int wm8960_i2c_remove(struct i2c_client *client)
-{
-	snd_soc_unregister_component(&client->dev);
-	return 0;
-}
+static void wm8960_i2c_remove(struct i2c_client *client)
+{}
 
 static const struct i2c_device_id wm8960_i2c_id[] = {
 	{ "wm8960", 0 },

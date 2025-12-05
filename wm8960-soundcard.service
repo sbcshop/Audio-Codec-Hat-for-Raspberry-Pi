@@ -1,5 +1,7 @@
 [Unit]
 Description=WM8960 soundcard service
+After=systemd-modules-load.service
+After=i2c-dev.service 
 After=alsa-restore.service
  
 [Service]

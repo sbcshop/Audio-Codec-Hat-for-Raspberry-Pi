@@ -40,5 +40,7 @@ sed -i '/snd-soc-wm8960/d' /etc/modules
 sed -i '/snd-soc-wm8960-soundcard/d' /etc/modules
 
 echo "------------------------------------------------------"
+echo "Audio codec HAT configuration unistalled completely"
 echo "Please reboot your raspberry pi to apply all settings"
+echo "Thank you!"
 echo "------------------------------------------------------"
